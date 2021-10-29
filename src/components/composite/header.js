@@ -22,6 +22,9 @@ function header() {
             </a>
             <ul className={`${openMenu ? "fixed " : "hidden "} text-sm gap-x-8 pl-16 font-bold fixed top-0 left-0 w-full h-full pt-44 md:pt-0 md:pt-auto text-white bg-black flex-none z-10 md:flex  md:bg-transparent md:relative md:text-black md:w-auto md:h-auto `}>
                 {menu && menu.map(menuItem => <MenuItem key={menuItem.id} menu={menuItem} />)}
+                <div className={` ${openMenu ? "  " : "hidden "}`}>
+                    <SocialMedia dark={false} />
+                </div>
             </ul>
             <div className="absolute md:hidden z-20 right-6 top-9 cursor-pointer" onClick={() => setOpenMenu(!openMenu)}>
                 <HamburgerMenuIcon className={`fill-current ${openMenu ? "text-white" : "text-black"}  `} />

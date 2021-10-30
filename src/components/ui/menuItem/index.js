@@ -7,7 +7,7 @@ function index({ menu }) {
                 {menu.title}
             </a>
             {menu.child ?
-                <ul className=" text-sm md:text-xs  mb-2 gap-y-4 shadow-lg bg-transparent relative  md:hidden md:group-hover:block md:group-hover:absolute md:bg-white md:p-4  ">
+                <ul className=" text-sm md:text-xs  mb-2 gap-y-4 shadow-lg bg-transparent relative  hidden group-hover:block md:group-hover:absolute md:bg-white md:p-4  ">
                     {menu.child.map(childItem => <li className=" flex" key={childItem.id}> <a href={childItem.url} className=" py-2 md:py-1"> {childItem.title} </a></li>)}
                 </ul>
                 : ""}

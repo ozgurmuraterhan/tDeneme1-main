@@ -17,7 +17,7 @@ function header() {
                 <img src="/assets/images/logo.png" className={`w-full ${openMenu ? " hidden " : " "}`} />
                 <img src="/assets/images/logo-light.png" className="w-full md:hidden z-20 relative" />
             </a>
-            <ul className={`${openMenu ? "fixed " : "hidden "} text-sm gap-x-8 pl-16 font-bold fixed top-0 left-0 w-full h-full pt-44 md:pt-0 md:pt-auto text-white bg-black flex-none z-10 md:flex  md:bg-transparent md:relative md:text-black md:w-auto md:h-auto `}>
+            <ul className={`${openMenu ? "left-0  w-full h-full" : "left-full md:left-auto md:flex "} transition-all  text-sm gap-x-8 pl-16 font-bold fixed top-0 left-0 w-full h-full pt-44 md:pt-0 md:pt-auto text-white bg-black flex-none z-10 md:flex  md:bg-transparent md:relative md:text-black md:w-auto md:h-auto `}>
                 {menu && menu.map(menuItem => <MenuItem key={menuItem.id} menu={menuItem} />)}
                 <div className={` ${openMenu ? "  " : "hidden "}`}>
                     <SocialMedia dark={false} />

@@ -6,7 +6,7 @@ const initialSettings = {
     {
       "id": 1,
       "title": "HAKKIMDA",
-      "url": "hakkimda",
+      "url": "javascript:;",
       "child": [
         {
           "id": 1,

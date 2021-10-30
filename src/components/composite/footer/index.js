@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
 
 import Router from "next/router"
-import { DefaultFooter, HomeFooter } from "@/components/ui/"
+import HomeFooter from "./homeFooter"
+import DefaultFooter from "./defaultFooter"
 
 function Footer() {
 

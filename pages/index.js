@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Home } from "@/views/index"
 
-export default function Default() {
+const Default = () => {
   return (
     <div className="">
       <Head>
@@ -11,3 +11,5 @@ export default function Default() {
     </div>
   )
 }
+
+export default Default

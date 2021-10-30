@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react"
+import { useSelector } from "react-redux"
 import { HamburgerMenuIcon } from "@/commons/index"
 import { MenuItem, SocialMedia } from "@/components/ui/"
-import menuData from "/menu.json"
 
 
 function header() {
     const [openMenu, setOpenMenu] = useState(false)
+    const { menuData } = useSelector(({ menuData }) => menuData)
 
-    const [menu, setMenu] = useState([])
-
-    useEffect(() => {
-        setMenu(menuData)
-    }, [])
+    const menu = menuData
 
     return (
         <div className="container mx-3.5 md:mx-auto my-8 flex justify-between items-center flex-wrap ">

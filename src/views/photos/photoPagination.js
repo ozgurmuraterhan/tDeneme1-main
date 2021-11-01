@@ -5,8 +5,6 @@ import { useDispatch } from "react-redux";
 function PhotoPagination({ length }) {
     const dispatch = useDispatch()
     const pag = []
-
-
     for (let i = 1; i <= Math.ceil(length / 12); i++) {
 
         const data = {
@@ -23,7 +21,11 @@ function PhotoPagination({ length }) {
     }
 
 
-    return <div className="flex justify-center">{pag}</div>
+    return (
+        <div className="flex justify-center">
+            {pag}
+        </div>
+    )
 }
 
 export default PhotoPagination

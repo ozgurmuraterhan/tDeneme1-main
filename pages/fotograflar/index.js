@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { Home, InsideHeader, PhotoPagination } from "@/views/index"
+import Link from 'next/link'
+
+import { Home, InsideHeader, PhotoPagination, PhotoList } from "@/views/index"
 import { useDispatch, useSelector } from "react-redux";
 import { wrapper } from "@/redux/store"
 import { getImagesData_r } from "@/redux/actions"
@@ -11,13 +13,6 @@ const Default = () => {
     const { imagesData } = useSelector(({ imagesData }) => imagesData);
     const { imagesPagination } = useSelector(({ imagesPagination }) => imagesPagination);
 
-    const [data, setData] = useState([])
-
-
-    useEffect(() => {
-        setData(imagesData)
-    }, [])
-
 
 
     return (
@@ -26,19 +21,11 @@ const Default = () => {
                 <title>Fotoğraflar</title>
             </Head>
             <InsideHeader title="Fotoğraflar" />
-            <div className="container grid grid-cols-3 mx-auto">
-                {data.slice(imagesPagination.offset, imagesPagination.limit).map(image =>
-                    <div key={image.id}>
-                        <img src={image.url} width="200" height="200" />
-                        <h1>{image.id}{image.title}</h1>
-                    </div>
-                )}
-
-
+            <div className="container grid grid-cols-3 mx-auto gap-8 mt-10">
+                {imagesData.slice(imagesPagination.offset, imagesPagination.limit).map(image => <PhotoList image={image} />)}
             </div>
             <div className="container mx-auto">
-
-                <PhotoPagination length={data.length} />
+                <PhotoPagination length={imagesData.length} />
             </div>
 
         </div>

@@ -1,10 +1,9 @@
-import React from 'react'
-
-function PhotoList() {
+import Link from "next/link"
+function PhotoList({ image }) {
     return (
-        <div>
-
-        </div>
+        <Link href={`/fotograflar/${image.id}`}>
+            <img src={image.thumbnailUrl} className="w-full" />
+        </Link>
     )
 }
 

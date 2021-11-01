@@ -11,39 +11,39 @@ const initialSettings = {
         {
           "id": 1,
           "title": "YOLCULUĞUM",
-          "url": "yolculugum"
+          "url": "/yolculugum"
         },
         {
           "id": 2,
           "title": "SEMİNERLERİM",
-          "url": "seminerlerim"
+          "url": "/seminerlerim"
         },
         {
           "id": 3,
           "title": "YOLCULUKLARIMIZ",
-          "url": "yolculuklarimiz"
+          "url": "/yolculuklarimiz"
         },
         {
           "id": 4,
           "title": "FOTOĞRAFLAR",
-          "url": "fotograflar"
+          "url": "/fotograflar"
         }
       ]
     },
     {
       "id": 2,
       "title": "ÇALIŞMALARIMIZ",
-      "url": "calismalarimiz"
+      "url": "/calismalarimiz"
     },
     {
       "id": 3,
       "title": "YOLCULUĞA BAŞLA",
-      "url": "yolculugabasla"
+      "url": "/yolculugabasla"
     },
     {
       "id": 4,
       "title": "İLETİSİM",
-      "url": "iletisim"
+      "url": "/iletisim"
     }
   ]
 };

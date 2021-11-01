@@ -1,10 +1,9 @@
-import { SAVE_MENU } from "../constants/ActionTypes";
+import { GET_MENU } from "../constants/ActionTypes";
 
 
-export const formDataSave_r = (data) => {
+export const menuDataGet_r = (data) => {
     return {
-        type: SAVE_MENU,
-        payload: data
+        type: GET_MENU,
     }
 };
 

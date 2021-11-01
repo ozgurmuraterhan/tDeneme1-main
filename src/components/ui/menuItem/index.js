@@ -1,10 +1,11 @@
-
+import { IoIosArrowDown } from "react-icons/io"
 function index({ menu }) {
     return (
 
         <li className="group relative" key={menu.id}>
             <a href={menu.url} className="w-full flex border-t -mt-0.1 py-2 md:py-0 border-b md:w-auto md:flex-none md:border-none ">
                 {menu.title}
+                {menu.child ? <IoIosArrowDown className="mt-1 ml-2" /> : ""}
             </a>
             {menu.child ?
                 <ul className=" text-sm md:text-xs  mb-2 gap-y-4 shadow-lg bg-transparent relative  hidden group-hover:block md:group-hover:absolute md:bg-white md:p-4  ">

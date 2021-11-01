@@ -1,4 +1,4 @@
-import { SAVE_FORM_DATA, RESET_FORM_DATA } from "../constants/ActionTypes";
+import { GET_MENU } from "../constants/ActionTypes";
 
 
 const initialSettings = {
@@ -6,7 +6,7 @@ const initialSettings = {
     {
       "id": 1,
       "title": "HAKKIMDA",
-      "url": "javascript:;",
+      "url": "#",
       "child": [
         {
           "id": 1,
@@ -48,10 +48,10 @@ const initialSettings = {
   ]
 };
 
-const formReducer = (state = initialSettings, action) => {
+const menuDataReducer = (state = initialSettings, action) => {
   switch (action.type) {
 
-    case SAVE_FORM_DATA:
+    case GET_MENU:
       return {
         ...state,
         menuData: action.payload,
@@ -63,4 +63,4 @@ const formReducer = (state = initialSettings, action) => {
   }
 };
 
-export default formReducer;
+export default menuDataReducer;

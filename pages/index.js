@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Home } from "@/views/index"
 
-const Default = () => {
+const Index = () => {
 
 
   return (
@@ -14,4 +14,4 @@ const Default = () => {
   )
 }
 
-export default Default
+export default Index

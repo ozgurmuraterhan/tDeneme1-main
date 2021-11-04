@@ -1,17 +1,18 @@
 import React from 'react'
-import Footer from "./footer"
-import Header from "./header"
+import Footer from "@/components/composite/footer"
+import Header from "@/components/composite/Header"
 
-function layoult({ children }) {
+const Layout = ({ children }) => {
     return (
         <>
-            <Header />
+            <div className="container mx-auto " >
 
-            {children}
-
-            <Footer />
+                <Header />
+                {children}
+                <Footer />
+            </div>
         </>
     )
 }
 
-export default layoult
+export default Layout

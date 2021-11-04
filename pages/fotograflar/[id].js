@@ -7,21 +7,15 @@ import { getImagesData_r } from "@/redux/actions"
 import { wrapper } from "@/redux/store"
 
 
-const Default = () => {
+const Photo = () => {
     const router = useRouter()
     const { id } = router.query
-
-    console.log("id", id)
-
     const { imagesData } = useSelector(({ imagesData }) => imagesData);
     const [data, setData] = useState({ a: 1 })
 
     useEffect(() => {
-
         setData(imagesData.find(val => val.id == id))
     }, [])
-
-
 
     return (
         <div className="">
@@ -29,12 +23,9 @@ const Default = () => {
                 <title>Fotoğraf Detay</title>
             </Head>
             <InsideHeader title="Fotoğraf Detay" />
-
             <div className="container grid grid-cols-1 mx-auto gap-8 mt-10">
                 <img src={data.url} className=" w-full" />
             </div>
-
-
         </div>
     )
 }
@@ -47,4 +38,4 @@ export const getServerSideProps = wrapper.getServerSideProps((store) =>
 
 
 
-export default Default
+export default Photo

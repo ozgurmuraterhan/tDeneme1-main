@@ -1,6 +1,6 @@
 import { Facebook, Twitter, Youtube, Instagram } from '@/commons/index'
 
-function index({ dark = true }) {
+const SocialMedia = ({ dark = true }) => {
     return (
         <div className={`${dark ? "fixed left-3 top-1/2 flex gap-y-4  flex-col" : "  flex gap-x-5 mt-5 justify-center"}`}>
             <Facebook className={`fill-current transition-all text-gray-300 ${dark ? "hover:text-black" : "hover:text-white"}`} />
@@ -11,4 +11,4 @@ function index({ dark = true }) {
     )
 }
 
-export default index
+export default SocialMedia

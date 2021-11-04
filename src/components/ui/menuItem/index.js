@@ -1,5 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io"
-function index({ menu }) {
+
+const MenuItem = ({ menu }) => {
     return (
 
         <li className="group relative" key={menu.id}>
@@ -18,4 +19,4 @@ function index({ menu }) {
     )
 }
 
-export default index
+export default MenuItem

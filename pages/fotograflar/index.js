@@ -8,7 +8,7 @@ import { wrapper } from "@/redux/store"
 import { getImagesData_r } from "@/redux/actions"
 import axios from "axios"
 
-const Default = () => {
+const Photos = () => {
     const dispatch = useDispatch()
     const { imagesData } = useSelector(({ imagesData }) => imagesData);
     const { imagesPagination } = useSelector(({ imagesPagination }) => imagesPagination);
@@ -21,10 +21,10 @@ const Default = () => {
                 <title>Fotoğraflar</title>
             </Head>
             <InsideHeader title="Fotoğraflar" />
-            <div className="container grid grid-cols-3 mx-auto gap-8 mt-10">
+            <div className="container py-3   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto gap-8 mt-10">
                 {imagesData.slice(imagesPagination.offset, imagesPagination.limit).map(image => <PhotoList image={image} />)}
             </div>
-            <div className="container mx-auto">
+            <div className="container my-4 mx-auto">
                 <PhotoPagination length={imagesData.length} />
             </div>
 
@@ -40,4 +40,4 @@ export const getServerSideProps = wrapper.getServerSideProps((store) =>
 
 
 
-export default Default
+export default Photos

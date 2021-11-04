@@ -2,8 +2,6 @@ import Head from 'next/head'
 import { Home } from "@/views/index"
 
 const Index = () => {
-
-
   return (
     <div className="">
       <Head>

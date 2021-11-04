@@ -5,8 +5,7 @@ import Header from "@/components/composite/Header"
 const Layout = ({ children }) => {
     return (
         <>
-            <div className="container mx-auto " >
-
+            <div>
                 <Header />
                 {children}
                 <Footer />

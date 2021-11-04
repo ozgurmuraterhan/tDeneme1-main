@@ -1,13 +1,14 @@
+
 import { SocialMedia } from "@/components/ui/"
 const Home = () => {
     return (
         <>
-            <div className="container  mx-auto grid grid-cols-1 lg:grid-cols-2 shadow-lg rounded-lg overflow-auto">
-                <div className="lg:px-5 xl:pr-20 lg:pl-0   ">
-                    <img src="/assets/images/homeImage.jpg" className="w-full object-cover" />
+            <div className="md:container mx-5  md:mx-auto grid grid-cols-1 lg:grid-cols-2 shadow-lg rounded-lg overflow-auto">
+                <div className="lg:pr-5 xl:pr-20 lg:pl-0   ">
+                    <img src="/assets/images/homeImage.jpg" className="w-full object-cover   " />
                 </div>
-                <div className="gap-y-10 flex flex-col px-5 lg:pr-10    pt-10 lg:pt-10 xl:pt-40 mb-5">
-                    <h1 className=" text-4xl font-bold">Merhaba, <br /> Dünyama Hoş Geldin</h1>
+                <div className=" gap-y-8 text-sm md:text-lg md:gap-y-10 flex flex-col px-5 lg:pr-10    pt-10 lg:pt-10 xl:pt-40 mb-5">
+                    <h1 className="text-2xl  md:text-4xl font-bold">Merhaba, <br /> Dünyama Hoş Geldin</h1>
                     <p>Herkese Selam
                         <br />
                         <b>Ben Ferhan Cihaner,</b>
@@ -21,7 +22,10 @@ const Home = () => {
                 </div>
             </div>
 
-            <SocialMedia className="relative" />
+            <div className="invisible md:visible">
+                <SocialMedia />
+            </div>
+
 
         </>
     )

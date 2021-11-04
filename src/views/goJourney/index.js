@@ -44,7 +44,7 @@ const GoJourney = () => {
 
     return (
 
-        <div className=" mx-auto  px-3 pt-16 w-full sm:w-7/12">
+        <div className=" mx-auto  px-3 pt-1 w-full sm:w-7/12">
             <form onSubmit={e => e.preventDefault()}>
                 <div className={step == 1 ? "" : "hidden"}>
                     <h1 className="  text-3xl font-bold mt-16 mb-3">Adım 1</h1>

@@ -1,6 +1,6 @@
 import React from "react";
 import '../public/global.scss'
-import AppLayout from "../src/components/composite/Layout"
+import AppLayout from "@/components/composite/Layout"
 
 import { wrapper } from "@/redux/store";
 import App from 'next/app';

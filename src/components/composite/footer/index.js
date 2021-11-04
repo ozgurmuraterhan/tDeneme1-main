@@ -9,7 +9,7 @@ function Footer() {
     const [isHomeFooter, setIsHomeFooter] = useState(false)
 
     useEffect(() => {
-        setIsHomeFooter(Router.router?.asPath == "/" ? true : false)
+        setIsHomeFooter(Router.router?.asPath == "/" || Router.router?.asPath == "/#" ? true : false)
     }, [])
     return (
         <>

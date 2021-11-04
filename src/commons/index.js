@@ -1,6 +1,6 @@
-export { default as HamburgerMenuIcon } from '@/commons/icons/hamburgerMenuIcon';
-export { default as HamburgerMenuCloseIcon } from '@/commons/icons/hamburgerMenuCloseIcon';
-export { default as Facebook } from '@/commons/icons/facebook';
-export { default as Twitter } from '@/commons/icons/twitter';
-export { default as Instagram } from '@/commons/icons/instagram';
-export { default as Youtube } from '@/commons/icons/youtube';
+export { default as HamburgerMenuIcon } from '@/commons/icons/HamburgerMenuIcon';
+export { default as HamburgerMenuCloseIcon } from '@/commons/icons/HamburgerMenuCloseIcon';
+export { default as Facebook } from '@/commons/icons/Facebook';
+export { default as Twitter } from '@/commons/icons/Twitter';
+export { default as Instagram } from '@/commons/icons/Instagram';
+export { default as Youtube } from '@/commons/icons/Youtube';

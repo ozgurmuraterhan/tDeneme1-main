@@ -13,7 +13,7 @@ module.exports = {
       colors: theme => ({
         "brand-color": "#4c3398",
 
-      })
+      }),
     },
   },
   variants: {

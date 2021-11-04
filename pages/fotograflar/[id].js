@@ -23,7 +23,7 @@ const Photo = () => {
                 <title>Fotoğraf Detay</title>
             </Head>
             <InsideHeader title="Fotoğraf Detay" />
-            <div className="container grid grid-cols-1 mx-auto gap-8 mt-10">
+            <div className="md:container grid grid-cols-1 mx-4 md:mx-auto gap-8 mt-10">
                 <img src={data.url} className=" w-full" />
             </div>
         </div>

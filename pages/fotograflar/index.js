@@ -21,7 +21,7 @@ const Photos = () => {
                 <title>Fotoğraflar</title>
             </Head>
             <InsideHeader title="Fotoğraflar" />
-            <div className="container py-3   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto gap-8 mt-10">
+            <div className="md:container py-3  mx-4 md:mx-auto   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8 mt-10">
                 {imagesData.slice(imagesPagination.offset, imagesPagination.limit).map(image => <PhotoList image={image} />)}
             </div>
             <div className="container my-4 mx-auto">
